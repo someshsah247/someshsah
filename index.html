@@ -8,7 +8,8 @@
   <body>
     <h1>Hey This is My Website.</h1>
     
-    hr>
+    <hr>
+    <hr>
       <h1  id="source" >Manupulation of DOM Elements</h1>
 
     <h2 id="destination" ></h2>
@@ -18,5 +19,21 @@
         dom.byId("destination").innerText = dom.byId("source").innerText;
       })
     </script>
+    
+      <hr>
+    <hr>
+
+    <h1>Showing GITHUB Data using Ajax Call to server in Json Form</h1>
+    <p id="githubdata"></p>
+
+    <script type="text/javascript">
+        require(["dojo/dom","dojo/request"], function(dom,request){
+          request.get("https://api.github.com/users/someshsah247").then(function(data){
+            dom.byId("githubdata").innerText=data;
+          })
+        })
+    </script>
+    
+    
   </body>
 </html>

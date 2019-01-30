@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>someshsah</title>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
   </head>
   <body>
     <h1>Hey This is My Website.</h1>
+    
+    hr>
+      <h1  id="source" >Manupulation of DOM Elements</h1>
+
+    <h2 id="destination" ></h2>
+
+    <script>
+      require(["dojo/dom"], function(dom){
+        dom.byId("destination").innerText = dom.byId("source").innerText;
+      })
+    </script>
   </body>
 </html>

@@ -9,11 +9,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS For WhatsApp -->
+    <style media="screen">
+            /* START Css for whatApp  */
+            .float{
+              position:fixed;
+              width:60px;
+              height:60px;
+              bottom:40px;
+              right:40px;
+              background-color:#25d366;
+              color:#FFF;
+              border-radius:50px;
+              text-align:center;
+              font-size:30px;
+              box-shadow: 2px 2px 3px #999;
+              z-index:100;
+            }
+            .my-float{
+              margin-top:16px;
+            }
+            /* END css for WhatsApp */
+    </style>
+
   </head>
 
 
   <body>
-
     <div class="alert alert-danger text-center" role="alert">
       This Page Contains Personal Information. If it is not related to You Please Leave/Cancle this page. Thank You!!!
     </div>
@@ -25,11 +48,10 @@
 
       <div class="row">
         <div class="col-sm-4">
-    	    <img height="350px" width="90%" src="https://drive.google.com/uc?export=view&id=1D8XvuFrzk1QcSkQOwZmxgmagCr0WQsxi" class="rounded float-start" alt="my_pic">
+    	     <img height="350px" width="90%" src="https://drive.google.com/uc?export=view&id=1D8XvuFrzk1QcSkQOwZmxgmagCr0WQsxi" class="rounded float-start" alt="my_pic">
           <br> <br>
-          <div class="">
-        	  <br>
-            <h4>Some Words For Me</h4>
+          <div class="text-center">
+            <h4 class="text-center text-warning">Some Words For Me</h4>
             <small> <i>Simple. Sweet. Smart. Traveler. <br>
             Foodie. Loyal. Music listener. Cooking. <br>
             Code the life & it's happiness… :) </i></small>
@@ -38,9 +60,8 @@
             <a  target="_blank" href="https://www.instagram.com/someshsah"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>
             <a  target="_blank" href="mailto:somesh.sah@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
             <br>
-            <h6>Feel Free To Message Me</h6>
+            <h6 class="text-center text-success"> <i>Feel Free To Message Me... </i> </h6>
           </div>
-
         </div>
 
     	<div class="col-sm-1">
@@ -62,12 +83,6 @@
         <p>Current City : Bangalore</p> -->
 
         <table class="table table-borderless">
-          <!-- <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Mobile Number</th>
-            </tr>
-          </thead> -->
           <tbody>
             <tr>
               <td>Name :</td>
@@ -166,7 +181,7 @@
       <div class="row  text-center">
         <div class="col-sm-1"></div>
           <div class="col-sm-10  text-center">
-            <h2 class="h2 text-primary">For Any Information Feel Free to Call/WhatsApp Us</h2>
+            <h2 class="h2 text-primary">For Any Information Feel Free to Call/WhatsApp</h2>
             <!-- <p>Chinta Mani Sah (Father)  +91 94508-70960</p>
             <p>Lokesh Kr. (Eldest Brother)  +91 87070-47095 (available on WhatsApp)</p>
             <p>Yogesh Sah (Elder Brother)  +1 78138-67712  (available on WhatsApp)</p> -->
@@ -212,7 +227,13 @@
 
     </div>
 
+    <!-- WhatsApp code  -->
+
+<a href="https://api.whatsapp.com/send?phone=8707047095&text=Hey%2C%20this%20message%20is%20regarding%20your%20brother%20bio-date." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+<!-- WhatsApp code  -->
+
   </body>
 
 </html>
-

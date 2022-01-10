@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CSS For WhatsApp -->
-    <style media="screen">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS For WhatsApp -->
+  <style media="screen">
     /* START Css for whatApp  */
-    .float{
-      position:fixed;
-      width:60px;
-      height:60px;
-      bottom:40px;
-      right:40px;
-      background-color:#25d366;
-      color:#FFF;
-      border-radius:50px;
-      text-align:center;
-      font-size:30px;
+    .float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
       box-shadow: 2px 2px 3px #999;
-      z-index:100;
+      z-index: 100;
     }
-    .my-float{
-      margin-top:16px;
-    }
-    /* END css for WhatsApp */
-</style>
 
-<script language="javascript">
+    .my-float {
+      margin-top: 16px;
+    }
+
+    /* END css for WhatsApp */
+  </style>
+
+  <script language="javascript">
     function pasuser(form) {
       if (form.id.value == "Somesh") {
         if (form.pass.value == "Somesh") {
@@ -50,39 +53,50 @@
 </head>
 
 
-    <body>
+<body>
 
-    <div class="container">
-        <br> <br>
-        <div class="row">
-            <div class="col-sm-2">
-            </div>
-    
-            <div class="col-sm-8">
-                <form name="login">
-                <div class="form-group">
-                    <label for="id">User Id : </label>
-                    <input type="text" class="form-control" name="id" aria-describedby="emailHelp"
-                        placeholder="Enter User Id">
-                </div>
-                <div class="form-group">
-                    <label for="pass">Password : </label>
-                    <input type="password" class="form-control" name="pass" placeholder="Enter Password">
-                </div>
-                <button type="button" value="Login" onClick="pasuser(this.form)" class="btn btn-primary">Submit</button>
-                </form>
-           </div>
-    
-        <div class="col-sm-2">
+  <div class="container">
+    <br> <br>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+
+      <div class="col-sm-8">
+
+        <br>
+        <hr>
+        <div class="alert alert-danger text-center" role="alert">
+          This Page Contains Personal Information. If it is not related to You Please Leave/Cancle this page. Thank
+          You!!!
         </div>
+        <hr>
+        <br>
+
+        <form name="login">
+          <div class="form-group">
+            <label for="id">User Id : </label>
+            <input type="text" class="form-control" name="id" aria-describedby="emailHelp" placeholder="Enter User Id">
+          </div>
+          <div class="form-group">
+            <label for="pass">Password : </label>
+            <input type="password" class="form-control" name="pass" placeholder="Enter Password">
+          </div>
+          <button type="button" value="Login" onClick="pasuser(this.form)" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-sm-2">
+      </div>
 
 
 
-    <!-- WhatsApp code  -->
-    <a href="https://api.whatsapp.com/send?phone=+918707047095&text=Hey%2C%20this%20message%20is%20regarding%20your%20brother%20bio-date." class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
-    <!-- WhatsApp code  -->
-    
-    </body>
+      <!-- WhatsApp code  -->
+      <a href="https://api.whatsapp.com/send?phone=+918707047095&text=Hey%2C%20this%20message%20is%20regarding%20your%20brother%20bio-date."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+      <!-- WhatsApp code  -->
+
+</body>
+
 </html>
